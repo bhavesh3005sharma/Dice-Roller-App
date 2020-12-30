@@ -63,7 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="Pawan has got 4"
+        android:text="CLick on ROLL DICE button to throw dice."
         android:textSize="18sp" />
 
     <Button
