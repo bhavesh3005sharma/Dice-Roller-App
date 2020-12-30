@@ -25,6 +25,7 @@
         android:src="@drawable/dice_image" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardDice"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
@@ -32,6 +33,7 @@
         app:cardCornerRadius="10dp">
 
         <TextView
+            android:id="@+id/textResult"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -39,6 +41,15 @@
             android:textColor="@color/black"
             android:textSize="64sp" />
     </androidx.cardview.widget.CardView>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/rollingDice"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+        android:src="@drawable/rolling_dice"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -52,6 +63,7 @@
             android:textSize="18sp"
             android:layout_margin="8dp"/>
         <EditText
+            android:id="@+id/textName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -67,11 +79,13 @@
         android:textSize="18sp" />
 
     <Button
+        android:id="@+id/buttonRollDice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:text="Roll Dice!" />
+        android:text="Roll Dice!"
+        android:onClick="rollDice"/>
 
 
 </LinearLayout>
